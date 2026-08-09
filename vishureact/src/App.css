@@ -113,12 +113,20 @@ body {
 
 .primary-btn {
   border: none;
-  background: linear-gradient(135deg, #f8d1d8, #d69aa4);
-  color: #1d1d1d;
-  font-weight: 700;
+  background: linear-gradient(135deg, #f7d0b4 0%, #d9a66d 35%, #c77b61 100%);
+  color: #201714;
+  font-weight: 800;
   border-radius: 999px;
-  padding: 0.8rem 1.3rem;
+  padding: 0.9rem 1.5rem;
   cursor: pointer;
+  box-shadow: 0 10px 20px rgba(196, 120, 83, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 24px rgba(196, 120, 83, 0.45);
+  filter: brightness(1.04);
 }
 
 .service-grid {
